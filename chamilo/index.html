@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Hogeschool Gent - Chamilo</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/chamilo.png" alt="Chamilo" />
+                </a>
+            </div>
+        </nav>
+
+        <main class="container-fluid">
+            <div class="row mb-3">
+                <ul class="nav navbar-expand nav-tabs px-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BIB</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 g-3">
+                    <div class="card">
+                        <div class="card-header">Aanmelden</div>
+                        <div class="card-body">
+                            <button
+                                type="button"
+                                class="btn w-100 p-2"
+                                id="login"
+                            >
+                                Aanmelden
+                            </button>
+
+                            <div class="my-4" id="login-separator"></div>
+
+                            <button
+                                type="button"
+                                class="btn w-100"
+                                id="external-login"
+                            >
+                                Aanmelden voor externe gebruikers
+                            </button>
+
+                            <h3 class="py-5">Beste student / Beste collega</h3>
+
+                            <p>
+                                Tijdens de zomervakantie is het systeem om aan
+                                te melden op HOGENT-applicaties gewijzigd naar
+                                een moderner en veiliger platform van Microsoft.
+                            </p>
+
+                            <p>
+                                De Microsoft login biedt HOGENT verschillende
+                                voordelen waaronder een verhoogde account
+                                veiligheid met behulp van Multi Factor
+                                Authenticatie (MFA) een automatische login in
+                                alle online Microsoft- en HOGENT- applicaties
+                                (SSO). Sinds deze zomer is het mogelijk om met
+                                behulp van 'itsme&reg;' jouw MFA opnieuw in te
+                                stellen. Je kan de link hiervoor terug vinden op
+                                de vernieuwde inlogpagina of
+                                <a
+                                    href="https://www.hogent.be/helpdesk/mfa/"
+                                    target="_blank"
+                                    >via deze link</a
+                                >
+                                .
+                            </p>
+
+                            <p>
+                                Mocht je sinds het overschakelen problemen
+                                ervaren met het inloggen, dan raden we jullie
+                                aan om jullie cookies te verwijderen in de
+                                browser die je gebruikt. Je kan onderstaande
+                                handleidingen raadplegen indien nodig:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Chrome:
+                                    <a
+                                        href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+                                        target="_blank"
+                                    >
+                                        https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop
+                                    </a>
+                                </li>
+                                <li>
+                                    Firefox:
+                                    <a
+                                        href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox"
+                                        target="_blank"
+                                    >
+                                        https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox
+                                    </a>
+                                </li>
+                                <li>
+                                    Edge:
+                                    <a
+                                        href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+                                        target="_blank"
+                                    >
+                                        https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09
+                                    </a>
+                                </li>
+                                <li>
+                                    Safari:
+                                    <a
+                                        href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac"
+                                        target="_blank"
+                                    >
+                                        https://support.apple.com/nl-be/guide/safari/sfri11471/mac
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <p>
+                                Voor assistentie of feedback kan je terecht bij
+                                de IT-helpdesk via helpdesk@hogent.be
+                            </p>
+
+                            <p>Met vriendelijke groeten</p>
+                            <p>Directie IT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mt-5 p-3">
+            <a href="http://www.hogent.be" target="_blank">Hogeschool Gent</a>
+            | Manager:
+            <a href="mailto:chamilo@hogent.be"
+                >directie Onderwijs - ILT (Innovation &amp; Learning
+                Technology)</a
+            >
+            &nbsp;&copy;&nbsp;
+            <span id="year"></span>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>

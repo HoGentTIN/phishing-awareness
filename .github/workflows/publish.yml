@@ -1,0 +1,44 @@
+on:
+    push:
+    pull_request:
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/setup-python@v6
+              with:
+                  python-version: "3.12"
+            - run: pip install ski-lint
+            - run: shopt -s globstar && ski-lint --check **/*
+            - uses: DavidAnson/markdownlint-cli2-action@v22
+              with:
+                  globs: "**/*.md"
+            - uses: creyD/prettier_action@v4.6
+              with:
+                  prettier_options: --check ./**/*.md
+
+    deploy:
+        if: github.ref == 'refs/heads/main'
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        needs: lint
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/configure-pages@v5
+            - uses: actions/upload-pages-artifact@v4
+              with:
+                  path: ./chamilo
+            - id: deployment
+              uses: actions/deploy-pages@v4

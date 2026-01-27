@@ -1,0 +1,53 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+}
+
+.navbar {
+    background-color: #406e8e;
+}
+
+.nav-tabs {
+    background-color: whitesmoke;
+}
+
+button#login {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #ffffff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+button#external-login {
+    color: #333333;
+    background-color: #f7f7f7;
+    border-color: #ccc;
+}
+
+a,
+.nav-link {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.nav-link.active,
+.card-header {
+    color: #555555 !important;
+}
+
+div#login-separator {
+    border-bottom: 1px dotted grey;
+}
+
+footer {
+    border-top: 1px solid lightgrey;
+    text-align: right;
+}
+
+footer,
+footer * {
+    font-size: 11px;
+}
