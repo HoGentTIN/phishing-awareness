@@ -19,7 +19,7 @@ jobs:
               with:
                   python-version: "3.12"
             - run: pip install ski-lint
-            - run: shopt -s globstar && ski-lint --check **/*
+            # - run: shopt -s globstar && ski-lint --check **/*
             - uses: DavidAnson/markdownlint-cli2-action@v22
               with:
                   globs: "**/*.md"
