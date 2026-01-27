@@ -1,13 +1,4 @@
-@font-face {
-    font-family: "code-pro-black-regular";
-    font-display: auto;
-    src:
-        local("code-pro-black-regular"),
-        url("fonts/code-pro-black-webfont.woff2") format("woff2"),
-        url("fonts/code-pro-black-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
     color: #000000;
