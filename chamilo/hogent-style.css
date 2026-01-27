@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "code-pro-black-regular";
+    font-display: auto;
+    src:
+        local("code-pro-black-regular"),
+        url("fonts/code-pro-black-webfont.woff2") format("woff2"),
+        url("fonts/code-pro-black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    margin: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 400;
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 85px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #c3bbaf;
+    text-decoration: none;
+}
+
+code {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar-brand img,
+.navbar img {
+    height: 50px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 0.875rem;
+    font-weight: bolder !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #c3bbaf;
+}
+
+strong.warning {
+    color: #ff0000;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn-dark {
+    color: #ffffff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-dark:hover {
+    background-color: #23272b;
+}
+
+.btn-outline-dark {
+    border-color: #343a40;
+}
+
+.btn-outline-dark:hover {
+    color: #000000;
+    background-color: #e6e6e6;
+}
