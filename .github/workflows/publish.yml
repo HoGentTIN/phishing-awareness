@@ -39,6 +39,6 @@ jobs:
             - uses: actions/configure-pages@v6
             - uses: actions/upload-pages-artifact@v4
               with:
-                  path: ./chamilo
+                  path: ./src
             - id: deployment
               uses: actions/deploy-pages@v5
