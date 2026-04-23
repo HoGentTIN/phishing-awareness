@@ -1,0 +1,13 @@
+body {
+    font-family: "Roboto", arial, sans-serif;
+    background-color: #f0f4fa;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn,
+.card {
+    border-radius: 20px;
+}
